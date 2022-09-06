@@ -24,7 +24,11 @@ switch (action) {
         break;
     }
     case "list": {
-        list();
+        titulos = list();
+        console.log("Tareas: ")
+        for(let i=0; i<titulos.length; i++){
+            console.log(titulos[i]);
+        }
         break;
     }
     case "retornar": {
@@ -48,7 +52,7 @@ switch (action) {
             console.log("Has olvidado la descripción");
             break;
         }
-
+        
         const editTask = edit(title,newDescription);
 
         console.log ("Título",editTask.title);

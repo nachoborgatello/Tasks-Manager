@@ -10,6 +10,12 @@
 
 const tasks = require('../tasksData.js');
 
+/**
+ * "Editamos" una tarea. Devolvemos un literal object con el titulo y descripción modificada.
+ * @param {string} title 
+ * @param {string} newDescription 
+ * @returns 
+ */
 const edit = (title,newDescription) => {
     for(i = 0; i < tasks.length; i++) {
         if(tasks[i].title === title) {
@@ -18,6 +24,11 @@ const edit = (title,newDescription) => {
                 desc: newDescription,
             }
         }
+    }
+    //En caso de no haber coincidencia retornamos un objeto "vacio".
+    return {
+        title: "",
+        desc: "",
     }
 }
 

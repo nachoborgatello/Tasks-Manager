@@ -6,12 +6,18 @@
 
 const tasks = require('../tasksData.js');
 
+/**
+ * Recibe un titulo por parametro y devuelve la descripción en caso de coincidencia.
+ * @param {string} title 
+ * @returns 
+ */
 const retornar = (title) => {
     for(i = 0; i < tasks.length; i++) {
         if(tasks[i].title === title) {
             return tasks[i].desc;
         }
     }
+    return "No se ha encontrado el título.";
 }
 
 module.exports = retornar;

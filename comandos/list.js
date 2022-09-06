@@ -6,10 +6,17 @@
 
 const tasks = require('../tasksData.js');
 
+var titulos = [""];
+
+/**
+ * Este metodo devuelve la solo los titulos de la lista de tasks.
+ * @returns 
+ */
 const list = () => {
     for(i = 0; i < tasks.length; i++) {
-        console.log(tasks[i].title);
+        titulos.push(tasks[i].title);
     }
+    return titulos;
 }
 
 module.exports = list;

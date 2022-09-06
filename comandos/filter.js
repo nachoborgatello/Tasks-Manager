@@ -5,13 +5,17 @@
     parámetro a la función.
 */
 
-
 const tasks = require('../tasksData.js');
 
 var flag = 0;
 var resultados = [];
 var title = "";
 
+/**
+ * Filtamos entre todas las tareas según un parametro pasado por consola.
+ * @param {string} parametro 
+ * @returns 
+ */
 const filter = (parametro) => {
     for (let i = 0; i < tasks.length; i++) {
         

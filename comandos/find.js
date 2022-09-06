@@ -5,6 +5,11 @@
 
 const tasks = require('../tasksData.js');
 
+/**
+ * Buscamos entre todas las tareas aquella que coincida con el pasado por consola.
+ * @param {string} title 
+ * @returns 
+ */
 const find = (title) => {
     
 /*
