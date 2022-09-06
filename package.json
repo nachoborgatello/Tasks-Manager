@@ -1,0 +1,16 @@
+{
+  "name": "tareas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prueba":"node Prueba.js",
+    "start": "node tasks.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
