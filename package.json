@@ -2,8 +2,12 @@
   "name": "tareas",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "test:create":"node tests/testCreate.js",
+    "test:read":"node tests/testRead.js",
+    "test:update":"node tests/testUpdate.js",
+    "test:delete":"node tests/testDelete.js",
     "start": "node app.js"
   },
   "keywords": [],

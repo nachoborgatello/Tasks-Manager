@@ -17,12 +17,17 @@ const path = require("path");
 */
 
 const read = () => {
-  const tasks = fs.readFileSync(
-    path.join(__dirname, "../tasksData.json"),
-    "utf8"
-  );
-  const parsedTasks = JSON.parse(tasks); //Parse convierte un array en un objeto literal.
-  return parsedTasks;
+  try{
+    const tasks = fs.readFileSync(
+      path.join(__dirname, "../tasksData.json"),
+      "utf8"
+    );
+    const parsedTasks = JSON.parse(tasks); //Parse convierte un array en un objeto literal.
+    return parsedTasks;
+  } catch (e) {
+    console.log("Ha ocurrido un error.");
+    console.log(e);
+  }
 };
 
 module.exports = read;

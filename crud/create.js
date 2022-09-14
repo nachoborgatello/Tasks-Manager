@@ -40,6 +40,7 @@ const create = (title, desc) => {
   } catch (e) {
     console.log("Ha ocurrido un error.");
     console.log(e);
+    return false;
   }
 };
 
