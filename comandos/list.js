@@ -9,7 +9,7 @@ const tasks = require('../tasksData.js');
 var titulos = [""];
 
 /**
- * Este metodo devuelve la solo los titulos de la lista de tasks.
+ * Este metodo devuelve solo los titulos de la lista de tasks.
  * @returns 
  */
 const list = () => {

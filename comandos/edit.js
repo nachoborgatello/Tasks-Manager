@@ -19,10 +19,14 @@ const tasks = require('../tasksData.js');
 const edit = (title,newDescription) => {
     for(i = 0; i < tasks.length; i++) {
         if(tasks[i].title === title) {
-            return {
+            
+            newTask = {
                 title: title,
                 desc: newDescription,
             }
+
+            //tasks.splice(tasks.indexOf(title), 1, newTask);
+            return newTask;
         }
     }
     //En caso de no haber coincidencia retornamos un objeto "vacio".
