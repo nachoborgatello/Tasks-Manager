@@ -22,7 +22,8 @@ const update = (title, newDesc) => {
     );
     return true;
   } catch (e) {
-    console.log("e");
+    console.log("Ha ocurrido un error.");
+    console.log(e);
   }
 };
 
